@@ -1,0 +1,73 @@
+.ac_results {
+	padding: 0px;
+	border-left: 1px solid #b0b0b0;
+	border-right: 1px solid #b0b0b0;
+	border-bottom: 3px solid #a0b9d9;
+	border-top: 3px solid #a0b9d9;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+	font-family:Arial;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	border-top: 1px solid #b0b0b0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	max-height:350px !important;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 4px 5px;
+	cursor: default;
+	display: block;
+	font-family:Arial !important;
+
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 16px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 20px;
+	overflow: hidden;
+}
+
+.ac_loading {
+	background: white url(../image/icon/addVotePreloader.gif) right center no-repeat;
+}
+
+.ac_odd {
+	background-color: #f3f5f6;
+}
+
+.ac_over {
+	background-color: #1276ab;
+	color: white;
+}
+
+
+.ac_results span.count {
+	/*color:#555555;*/
+	float:right;
+	font-size:10px;
+	padding:1px 0 0;
+}
+
+.ac_results span.word {float:left}
+.ac_header{
+    margin:0 auto; 
+    text-align:center;
+    font-size:10px;
+	background-color:#1276ac;
+	color:#fff;
+}
