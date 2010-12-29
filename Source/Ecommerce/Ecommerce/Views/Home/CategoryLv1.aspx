@@ -8,7 +8,7 @@
 	<div style="float:left;">
 		<a href="#">Home</a>
 		<span class="bullet1"></span> 
-		<a href="#">Testing category</a>
+		Testing category
 	</div>
 
 	<div class="clearall"></div>
