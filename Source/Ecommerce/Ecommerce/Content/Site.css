@@ -5,340 +5,247 @@ to use a different color start by replacing all instances of
 ----------------------------------------------------------*/
 body
 {
-    background-color: #5c87b2;
-    font-size: .75em;
-    font-family: Verdana, Helvetica, Sans-Serif;
+    background-color: #ffffff;
+    font-size:13px;
+    font-family: Verdana, Arial, sans-serif, Tahoma;
     margin: 0;
     padding: 0;
-    color: #696969;
+    color: #000000;
 }
 
-a:link
+#wrap
 {
-    color: #034af3;
-    text-decoration: underline;
-}
-a:visited
-{
-    color: #505abc;
-}
-a:hover
-{
-    color: #1d60ff;
-    text-decoration: none;
-}
-a:active
-{
-    color: #12eb87;
+	width:985px;
+	margin:auto;
 }
 
-p, ul
+#left
 {
-    margin-bottom: 20px;
-    line-height: 1.6em;
+	width: 215px;
+	float:left;	
 }
 
-/* HEADINGS   
-----------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6
+#right
 {
-    font-size: 1.5em;
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
+	width:770px;
+	float:left;	
 }
 
-h1
+.clearall
 {
-    font-size: 2em;
-    padding-bottom: 0;
-    margin-bottom: 0;
+	clear:both;	
 }
-h2
-{
-    padding: 0 0 10px 0;
-}
+
 h3
 {
-    font-size: 1.2em;
-}
-h4
-{
-    font-size: 1.1em;
-}
-h5, h6
-{
-    font-size: 1em;
+	color:#f47820;
 }
 
-/* this rule styles <h2> tags that are the 
-first child of the left and right table columns */
-.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+div.box
 {
-    margin-top: 0;
+	float:left;
+	border-top:3px solid #a0b9d9;	
+	border-bottom:3px solid #a0b9d9;
+	border-left:1px solid #b0b0b0;
+	border-right:1px solid #b0b0b0;
+	text-align:center;
 }
 
-/* PRIMARY LAYOUT ELEMENTS   
-----------------------------------------------------------*/
-
-/* you can specify a greater or lesser percentage for the 
-page width. Or, you can specify an exact pixel width. */
-.page
+div.box div.item
 {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+	float:left;
+	border-right:1px solid #b0b0b0;
+	border-bottom:1px solid #b0b0b0;
 }
 
-#header
+div.box div.itemLast
 {
-    position: relative;
-    margin-bottom: 0px;
-    color: #000;
-    padding: 0;
+	float:left;
+	border-bottom:1px solid #b0b0b0;
 }
 
-#header h1
+a
 {
-    font-weight: bold;
-    padding: 5px 0;
-    margin: 0;
-    color: #fff;
-    border: none;
-    line-height: 2em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 32px !important;
+	color: #076e9e;
+	text-decoration:none;
 }
 
-#main
+a:hover
 {
-    padding: 30px 30px 15px 30px;
-    background-color: #fff;
-    margin-bottom: 30px;
-    _height: 1px; /* only IE6 applies CSS properties starting with an underscore */
+	text-decoration:underline;	
 }
 
-#footer
+a.categoryLink
 {
-    color: #999;
-    padding: 10px 0;
-    text-align: center;
-    line-height: normal;
-    margin: 0;
-    font-size: .9em;
+	color: #f47820;
+	text-decoration:none;
+	font-size:17px;
+	font-family: sans-serif, Verdana, Arial, Tahoma;
 }
 
-/* TAB MENU   
-----------------------------------------------------------*/
-ul#menu
+a.categoryLink:hover
 {
-    border-bottom: 1px #5C87B2 solid;
-    padding: 0 0 2px;
-    position: relative;
-    margin: 0;
-    text-align: right;
+	text-decoration:underline;	
 }
 
-ul#menu li
+span.button1
 {
-    display: inline;
-    list-style: none;
+	float:left;
+	font-size:12px;
+	display:block;
+	width:73px;
+	height:25px;
+	color:#ffffff;
+	padding-top:6px;	
+	background-image:url("Images/button1.png");
+	cursor:pointer;
 }
 
-ul#menu li#greeting
+span.button1:hover
 {
-    padding: 10px 20px;
-    font-weight: bold;
-    text-decoration: none;
-    line-height: 2.8em;
-    color: #fff;
+	background-image:url("Images/button1Hover.png");
 }
 
-ul#menu li a
+span.bullet1
 {
-    padding: 10px 20px;
-    font-weight: bold;
-    text-decoration: none;
-    line-height: 2.8em;
-    background-color: #e8eef4;
-    color: #034af3;
+	background-image:url("Images/icon_bullet1.gif");	
+	width:10px;
+	height:10px;
+	display:inline-block;
 }
 
-ul#menu li a:hover
+.price
 {
-    background-color: #fff;
-    text-decoration: none;
+	font-size:14px;
+	font-weight:bold;	
+	color:#000000;
 }
 
-ul#menu li a:active
+span.staron
 {
-    background-color: #a6e2a6;
-    text-decoration: none;
+	background-image:url("Images/star-on.png");	
+	width:16px;
+	height:16px;
+	display:inline-block;
+	cursor:pointer;
 }
 
-ul#menu li.selected a
+span.staroff
 {
-    background-color: #fff;
-    color: #000;
+	background-image:url("Images/star-off.png");	
+	width:16px;
+	height:16px;
+	display:inline-block;
+	cursor:pointer;
 }
 
-/* FORM LAYOUT ELEMENTS   
-----------------------------------------------------------*/
+/* -----------------------------------------------------------
+	Pagination
+----------------------------------------------------------- */
 
-fieldset 
+div.pagination
 {
-    margin: 1em 0;
-    padding: 1em;
-    border: 1px solid #CCC;
+	margin: 10px 20px 10px 20px;
+	padding: 0;
+	height: 1%;
+	clear: both;
+	overflow: hidden;
 }
 
-fieldset p 
+div.pagination div.results
 {
-    margin: 2px 12px 10px 10px;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	float: left;
 }
 
-legend 
+div.pagination div.results span 
 {
-    font-size: 1.1em;
-    font-weight: 600;
-    padding: 2px 4px 8px 4px;
+	margin: 0;
+	padding: 2px 3px;
+	height: 1%;
+	display: block;
+	float: left;
+	/*background: #ebebeb url("/images/pager.png") repeat-x;
+	border-top: 1px solid #dedede;
+	border-left: 1px solid #cfcfcf;
+	border-right: 1px solid #c4c4c4;
+	border-bottom: 1px solid #c4c4c4;*/
+	color: #626262;
+	font-weight: normal;
+	font-family:sans-serif, Verdana, Arial, Tahoma;
+	font-size:14px;
 }
 
-input[type="text"] 
+div.pagination ul.pager
 {
-    width: 200px;
-    border: 1px solid #CCC;
+	margin: 0;
+	padding: 0;
+	float: right;
+	text-align: right;
 }
 
-input[type="password"] 
+div.pagination ul.pager li
 {
-    width: 200px;
-    border: 1px solid #CCC;
+	margin: 0 0 0 2px;
+	padding: 0;
+	height: 1%;
+	float: left;
+	list-style: none;
+	/*background: #ebebeb url("/images/pager.png") repeat-x;*/
+	/*border-top: 1px solid #dedede;
+	border-left: 1px solid #cfcfcf;
+	border-right: 1px solid #c4c4c4;
+	border-bottom: 1px solid #c4c4c4;
+	color: #4A4A4A;*/
+	font-weight: normal;
+	font-family:sans-serif, Verdana, Arial, Tahoma;
+	font-size:14px;
+	color:#626262;
 }
 
-/* TABLE
-----------------------------------------------------------*/
-
-table 
+div.pagination ul.pager li.separator
 {
-  border: solid 1px #e8eef4;
-  border-collapse: collapse;
+	padding: 2px;   
 }
 
-table td 
+div.pagination ul.pager li.current
 {
-  padding: 5px;   
-  border: solid 1px #e8eef4;
+	padding: 2px;   
+	/*background: #b4b4b4 url("/images/pager_selected.png") repeat-x;*/
+	/*border-top: 1px solid #cccccc;
+	border-left: 1px solid #bebebe;
+	border-right: 1px solid #b1b1b1;
+	border-bottom: 1px solid #afafaf;
+	color: #515151;*/
+	color: #000000;
 }
 
-table th
+div.pagination ul.pager li.disabled
 {
-  padding: 6px 5px;
-  text-align: left;
-  background-color: #e8eef4; 
-  border: solid 1px #e8eef4;   
+	padding: 2px;
+	color: #000000;
 }
 
-/* MISC  
-----------------------------------------------------------*/
-.clear
+div.pagination ul.pager li a 
 {
-    clear: both;
+	margin: 0;
+	padding: 2px;
+	height: 1%;
+	display: block;
+	float: left;
+	color: #626262;
+	text-decoration: none;
 }
 
-.error
+div.pagination ul.pager li a:hover, 
+div.pagination ul.pager li a:active 
 {
-    color:Red;
-}
-
-#menucontainer
-{
-    margin-top:40px;
-}
-
-div#title
-{
-    display:block;
-    float:left;
-    text-align:left;
-}
-
-#logindisplay
-{
-    font-size:1.1em;
-    display:block;
-    text-align:right;
-    margin:10px;
-    color:White;
-}
-
-#logindisplay a:link
-{
-    color: white;
-    text-decoration: underline;
-}
-
-#logindisplay a:visited
-{
-    color: white;
-    text-decoration: underline;
-}
-
-#logindisplay a:hover
-{
-    color: white;
-    text-decoration: none;
-}
-
-/* Styles for validation helpers
------------------------------------------------------------*/
-.field-validation-error
-{
-    color: #ff0000;
-}
-
-.field-validation-valid
-{
-    display: none;
-}
-
-.input-validation-error
-{
-    border: 1px solid #ff0000;
-    background-color: #ffeeee;
-}
-
-.validation-summary-errors
-{
-    font-weight: bold;
-    color: #ff0000;
-}
-
-.validation-summary-valid
-{
-    display: none;
-}
-
-/* Styles for editor and display helpers
-----------------------------------------------------------*/
-.display-label,
-.editor-label,
-.display-field,
-.editor-field
-{
-    margin: 0.5em 0;
-}
-
-.text-box
-{
-    width: 30em;
-}
-
-.text-box.multi-line
-{
-    height: 6.5em;
-}
-
-.tri-state
-{
-    width: 6em;
+	/*background: #b4b4b4 url("/images/pager_selected.png") repeat-x;
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #bebebe;
+	border-right: 1px solid #b1b1b1;
+	border-bottom: 1px solid #afafaf;*/
+	color: #000000;
 }
