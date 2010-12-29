@@ -28,6 +28,11 @@ namespace Ecommerce.Controllers
 			return View();
 		}
 
+		public ActionResult ProductDetail()
+		{
+			return View();
+		}
+
 		#endregion
 
 	}
