@@ -20,5 +20,15 @@ namespace Ecommerce.Controllers
 		{
 			return View();
 		}
+
+		#region Test giao dien
+
+		public ActionResult CategoryLv1()
+		{
+			return View();
+		}
+
+		#endregion
+
 	}
 }
