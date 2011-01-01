@@ -136,7 +136,7 @@ div.ribbon{
 	border:1px solid #c4c0be;
 	background: #ffffff url('../images/gb.jpg') no-repeat;
 	width:195px;
-	padding:30px 10px 10px 10px;
+	padding:30px 10px 5px 10px;
 	overflow:auto;
 	font-weight:bold;
 }
@@ -165,7 +165,7 @@ div.ribbon{
 
 #block_portfolio {
 	overflow:auto;
-	margin-bottom:0px;
+	margin-bottom:10px;
 }
 #portfolio_items {
 	margin-bottom:0px;
