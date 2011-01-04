@@ -429,5 +429,7 @@ body#dark #text_column h2#text_title {
 	background-image:url(../images/creatif_dark.jpg);
 }
 .sliceimg ul li{
- 	display:inline;margin-left:5px; margin-right:8px;
+ 	display:inline;
+ 	margin-left:5px; 
+ 	margin-right:8px;
 }
