@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs"
+    Inherits="ECommerce2010.MasterPage" %>
+
+<%@ Register Src="UserControl/Content/SliceImage.ascx" TagName="SliceImage" TagPrefix="uc1" %>
+<%@ Register Src="UserControl/Right/Right.ascx" TagName="Right" TagPrefix="uc2" %>
+<%@ Register src="UserControl/Left/Left.ascx" tagname="Left" tagprefix="uc3" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>.: Shoping :.</title>
+    <link href="Style/MasterPage.css" type="text/css" rel="Stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <center>
+        <div id="main">
+            <div class="container">
+                <div id="header">
+                    <ul id="menu">
+                        <li><a href="" class="active">HOME</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="">REGISTER</a></li>
+                    </ul>
+                    <div id="logo" style="">
+                    </div>
+                </div>
+                <div id="block-search">
+                    <div class="lang">
+                        <div style="float: left; padding-top: 2px;">
+                            Select Language: &nbsp;</div>
+                        <div style="float: left">
+                            <select style="width: 98px">
+                                <option>English</option>
+                                <option>Poland</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="lang2">
+                        <div id="d1">
+                            <input id="search" style="width: 412px; height: 22px;" /></div>
+                        <div id="d2" style="">
+                            <a class="button">Search</a></div>
+                    </div>
+                </div>
+                <div id="ND">
+                    <div id="hd">
+                    </div>
+                    <div id="insite">
+                        <div id="block_featured">
+                            <uc1:SliceImage ID="SliceImage1" runat="server" />
+                        </div>
+                        <div id="block_portfolio">
+                            <!--Menu Left-->
+                            <div id="Left">
+                                <uc3:Left ID="Left1" runat="server" />
+                            </div>
+                            <!--Right-->
+                            <div id="content_area" class="block">
+                                <div id="headcontent">
+                                </div>
+                                <!-- Nội dung sản phẩm -->
+                                <div class="block_inside">
+                                    <uc2:Right ID="Right1" runat="server" />
+                                </div>
+                                <div id="footcontent">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="ft">
+                </div>
+            </div>
+        </div>
+        </div>
+    </center>
+    </form>
+</body>
+</html>
