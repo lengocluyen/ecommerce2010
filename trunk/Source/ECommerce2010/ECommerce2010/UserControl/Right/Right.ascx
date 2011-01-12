@@ -2,8 +2,9 @@
 <div class="Sp">
     <img class="imgsp" src="../../Image/img/1.JPG" />
     <div class="detail">
-        <h3>
-            Fujifilm FinePix HS10</h3>
+        <h3 class="NameProduct">
+            Fujifilm FinePix HS10
+        </h3>
         <p>
             Found at 55 stores in price from 164.50 to 259.01$
         </p>
