@@ -41,21 +41,12 @@ namespace ECommerce2010 {
         protected global::ECommerce2010.UserControl.Content.SliceImage SliceImage1;
         
         /// <summary>
-        /// Left1 control.
+        /// Content1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::ECommerce2010.UserControl.Left.Left Left1;
-        
-        /// <summary>
-        /// Right1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::ECommerce2010.UserControl.Right.Right Right1;
+        protected global::ECommerce2010.UserControl.Content.Content Content1;
     }
 }
