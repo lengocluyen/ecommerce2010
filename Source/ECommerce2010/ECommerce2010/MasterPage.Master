@@ -2,13 +2,13 @@
     Inherits="ECommerce2010.MasterPage" %>
 
 <%@ Register Src="UserControl/Content/SliceImage.ascx" TagName="SliceImage" TagPrefix="uc1" %>
-<%@ Register Src="UserControl/Right/Right.ascx" TagName="Right" TagPrefix="uc2" %>
-<%@ Register src="UserControl/Left/Left.ascx" tagname="Left" tagprefix="uc3" %>
+<%@ Register src="UserControl/Content/Content.ascx" tagname="Content" tagprefix="uc4" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>.: Shoping :.</title>
     <link href="Style/MasterPage.css" type="text/css" rel="Stylesheet" />
+     <link href="Style/Right.css" type="text/css" rel="Stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -51,29 +51,27 @@
                         <div id="block_featured">
                             <uc1:SliceImage ID="SliceImage1" runat="server" />
                         </div>
-                        <div id="block_portfolio">
-                            <!--Menu Left-->
-                            <div id="Left">
-                                <uc3:Left ID="Left1" runat="server" />
-                            </div>
-                            <!--Right-->
-                            <div id="content_area" class="block">
-                                <div id="headcontent">
-                                </div>
-                                <!-- Nội dung sản phẩm -->
-                                <div class="block_inside">
-                                    <uc2:Right ID="Right1" runat="server" />
-                                </div>
-                                <div id="footcontent">
-                                </div>
-                            </div>
-                        </div>
+                         <uc4:Content ID="Content1" runat="server" />
+                        
+                    </div>
+                    <div id="ft" >
+                       
+                       
+                       
+                </div>
+                
+                </div>
+                <div id="footer">
+                    <div id="headfooter">
+                    </div>
+                    <div id="midfooter">
+                        <h3>
+                            FlyChipsTeam</h3>
+                    </div>
+                    <div id="endfooter">
                     </div>
                 </div>
-                <div id="ft">
-                </div>
             </div>
-        </div>
         </div>
     </center>
     </form>
