@@ -341,8 +341,10 @@ a
 }
 #content_area .block_inside
 {
-	
 	background: #FFFFFF url( '../Image/mid-4.png' ) repeat-y;
+	height:auto;
+	overflow:auto;
+	min-height: 250px;
 }
 
 
@@ -353,14 +355,7 @@ a
 	margin-top: 10px;
 	padding-top: 10px;
 }
-.detail
-{
-	float: left;
-	padding: 10px;
-	width: 510px;
-	height: auto;
-	padding-bottom: 10px;
-}
+
 
 
 /******************/
@@ -373,7 +368,8 @@ a
 	margin-left:-10px;
 	padding:15px;
 	position:relative;
-	
+	top: 0px;
+	left: 0px;
 }
 
 
