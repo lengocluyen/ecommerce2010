@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ECommerce2010 {
+namespace ECommerce2010.UserControl.Left {
     
     
-    public partial class Default {
+    public partial class Left {
     }
 }

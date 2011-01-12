@@ -13,7 +13,7 @@ using System.Xml.Linq;
 
 namespace ECommerce2010
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class MasterPage : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

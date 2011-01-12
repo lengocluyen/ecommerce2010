@@ -11,9 +11,9 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
-namespace ECommerce2010
+namespace ECommerce2010.UserControl.Content
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class SliceImage : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
