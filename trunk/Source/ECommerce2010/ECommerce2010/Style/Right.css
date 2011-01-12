@@ -1,0 +1,58 @@
+﻿body
+{
+}
+
+.NameProduct
+{
+	color:#79a109;
+	margin-bottom:0px;
+	}
+.Sp
+{
+	display:block;
+	height:auto;
+	float:left;
+	margin-left:30px;
+	width:140px; 
+	text-align:center
+}
+
+.Sp .detail
+{
+	margin-top: 20px;
+}
+.Sp .button
+{
+	padding: 5px 10px 5px 10px;
+}
+.imgsp
+{
+	float: left;
+	margin: 10px;
+	float: left;
+	width:121px;
+	height:179px;
+}
+.detail
+{
+	float: left;
+	padding: 10px;
+	width: 510px;
+	height: auto;
+	padding-bottom: 10px;
+	text-align:left;
+}
+.price 
+{
+color:Red;
+font-weight:bold;
+margin-top:0px;
+}
+a.button
+{
+	background: #32312f url('../Image/btn_bg.png') repeat-x;
+	border-color: #007de2;
+	height: 32px;
+	color: #FFFFFF;
+	padding: 5px 10px 5px 10px;
+}
