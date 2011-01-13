@@ -17,17 +17,18 @@
     </div>--%>
 
 
-<div class="box" style="width:100%; padding:10px 0 10px 0;">
+<div class="box" style="width:700px; padding:10px 0 10px 0; height:auto">
 		<div style="float:left; margin-left:10px;">
 			<img class="small" src="../../Image/img/1.JPG" />
 			<p>Photos: 1</p>
 		</div>
-		<div class="productDetail" style="float:left; margin-left:30px; text-align:left; line-height:21px;">
+		<div class="productDetail" 
+            style="width:500px; height:auto; float:left; margin-left:30px; text-align:left; line-height:21px; margin-right: 0px;">
 			Name: <h4 style="display:inline;">Testing Product</h4><br/>
 			Price: <span class="price">45$</span><br />
 			Description: <br />
 			<div class="expandField">
-				<div class="productDescription" style="float:left; width:800px; font-size:11px; overflow:hidden;">
+				<div class="productDescription" style="float:left; font-size:11px; overflow:hidden;">
 					<p>
 						Xbox 360 250 GB to najnowsza wersja konsoli Xbox 360 firmy Microsoft. Charakteryzuje się ona mniejszymi wymiarami (o 30 procent względem poprzedniczek) - 270 na 75 na 264 mm, waży zaledwie 2,9 kg (3,5 kg w przypadku wcześniejszych modeli) i wewnętrzny dysk twardy o pojemności 250 GB.<br /><br />
 						Xbox 360 250 GB jako pierwszy model w historii Xbox 360 posiada także wbudowane WiFi w standardzie N - 802.11n, pozwalające na komunikację radiową padów i pilotów z częstotliwością 2,4 GHz.<br /><br />
@@ -44,8 +45,10 @@
 					</p>
 				</div>
 			</div>
-			<div class="clearall"></div>
+				<a href="#" class="button">Add to card</a>
+			<div class="clearall" style="clear:both"></div>
 			<span class="staron"></span><span class="staron"></span><span class="staron"></span><span class="staroff"></span><span class="staroff"></span>
 			<a href="#" style="font-size:11px;">(21 opinions)</a>
+		
 		</div>
 	</div>
