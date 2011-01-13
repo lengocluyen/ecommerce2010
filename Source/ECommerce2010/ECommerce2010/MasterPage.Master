@@ -6,6 +6,7 @@
 <%@ Register Src="UserControl/Left/Left.ascx" TagName="Left" TagPrefix="uc2" %>
 <%@ Register Src="UserControl/Right/Right.ascx" TagName="Right" TagPrefix="uc3" %>
 <%@ Register src="UserControl/Right/DetailProduct.ascx" tagname="DetailProduct" tagprefix="uc5" %>
+<%@ Register src="UserControl/YourCart.ascx" tagname="YourCart" tagprefix="uc6" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -54,9 +55,13 @@
                         <div id="block_featured">
                             <uc1:SliceImage ID="SliceImage1" runat="server" />
                         </div>
+                        <div class="clear"></div>
+                            <img src="Image/shopping_cart.png" 
+                                style="float:right; margin-right:25px"/>
+                                  <div class="clear"></div>
                         <div id="block_portfolio">
                             <!--Menu Left-->
-                            <div id="Left">
+                            &nbsp;<div id="Left">
                                 <uc2:Left ID="Left1" runat="server" />
                             </div>
                             <!--Right-->
@@ -70,7 +75,9 @@
                                 <div class="block_inside">
                                     <%--<uc3:Right ID="Right1" runat="server" />--%>
                                     
-                                    <uc5:DetailProduct ID="DetailProduct1" runat="server" />
+                                    <%--<uc5:DetailProduct ID="DetailProduct1" runat="server" />--%>
+                                    
+                                    <uc6:YourCart ID="YourCart1" runat="server" />
                                     
                                 </div>
                                 <div id="footcontent">
@@ -78,9 +85,11 @@
                             </div>
                         </div>
                     </div>
+                    <div class="clear"></div>
                     <div id="ft">
                     </div>
                 </div>
+                <div class="clear"></div>
                 <div id="footer">
                     <div id="headfooter">
                     </div>
