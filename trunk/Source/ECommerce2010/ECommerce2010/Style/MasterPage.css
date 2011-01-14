@@ -7,7 +7,7 @@
 	color: black;
 	font-size: 13px;
 	line-height: 19px;
-	background: #c5e5f2 url(  '../Image/bg.JPG' ) repeat-x;
+	background: #c5e5f2 url(   '../Image/bg.JPG' ) repeat-x;
 	height: 100%;
 	min-width: 1000px;
 }
@@ -55,7 +55,7 @@ ul#menu li a
 }
 ul#menu li a.active, ul#menu li a:hover
 {
-	color: #f47901;
+	color: #df2984;
 }
 
 #logo h1, #logo small
@@ -66,16 +66,15 @@ ul#menu li a.active, ul#menu li a:hover
 }
 #logo
 {
-	background-image: url(  '../Image/logo.png' );
+	background-image: url( '../Image/logo1.png' );
 	background-repeat: no-repeat;
-	width: 194px;
-	height: 83px;
-	height: 46px;
+	width: 382px;
+	height: 86;
 	position: absolute;
-	height: 46px;
+	height: 82px;
 	top: -2px;
 	left: 4px;
-	margin-bottom: 18px;
+	margin-top: -22px;
 }
 /**************************/
 
@@ -105,14 +104,34 @@ ul#menu li a.active, ul#menu li a:hover
 /**************************/
 
 /* button */
+.btn[class]
+{
+	background-image:url('../Image/shape.png');
+	background-position: 50% 100%;
+	background: #2AE;
+	color: white;
+	cursor: pointer;
+	display: block;
+	float: left;
+	padding: 5px;
+	position: relative;
+	text-decoration: none;
+}
 a.button
 {
-	background: #32312f url(  '../Image/btn_bg.png' ) repeat-x;
+	background: #32312f url('../Image/btn_bg.png' ) repeat-x;
 	border-color: #007de2;
 	height: 32px;
 	color: #FFFFFF;
 	padding: 5px 10px 5px 10px;
+	color: #FFFFFF;
 }
+.button
+{
+	background: #32312f url(   '../Image/btn_bg.png' ) repeat-x;
+	height: 32px;
+}
+
 #d1
 {
 	float: left;
@@ -139,14 +158,14 @@ a.button
 
 #hd
 {
-	background: #c5e5f2 url(  '../Image/hd-3.png' ) no-repeat;
+	background: #c5e5f2 url(   '../Image/hd-3.png' ) no-repeat;
 	height: 46px;
 	width: 970px;
 	margin-bottom: -10px;
 }
 #ft
 {
-	background: #FFFFFF url( '../Image/ft-3.png' ) no-repeat;
+	background: #FFFFFF url(  '../Image/ft-3.png' ) no-repeat;
 	height: 25px;
 	margin-bottom: 20px;
 	margin-top: -15px;
@@ -155,7 +174,7 @@ a.button
 
 #insite
 {
-	background: #c5e5f2 url(  '../Image/mid-3.png' ) repeat-y;
+	background: #c5e5f2 url(   '../Image/mid-3.png' ) repeat-y;
 	width: 970px;
 	padding-left: 11px;
 }
@@ -227,7 +246,7 @@ a.button
 
 .mini_portfolio_item .headitems
 {
-	background: #ffffff url(  '../Image/Menu.png' ) no-repeat;
+	background: #ffffff url(   '../Image/Menu.png' ) no-repeat;
 	position: relative;
 	height: 44px;
 	width: 217px;
@@ -235,12 +254,12 @@ a.button
 
 .mini_portfolio_item .miditems
 {
-	background: #ffffff url(  '../Image/mid.png' ) repeat-y;
+	background: #ffffff url(   '../Image/mid.png' ) repeat-y;
 }
 
 .mini_portfolio_item .footitems
 {
-	background: #ffffff url(  '../Image/btn-8.png' ) no-repeat;
+	background: #ffffff url(   '../Image/btn-8.png' ) no-repeat;
 	position: relative;
 	height: 15px;
 	width: 217px;
@@ -276,7 +295,7 @@ div.ribbon
 .Categories li
 {
 	list-style: none;
-	background-image: url(  '../Image/list-bg.png' );
+	background-image: url(   '../Image/list-bg.png' );
 	background-repeat: no-repeat;
 	padding-left: 15px;
 	padding-top: 1px;
@@ -285,6 +304,7 @@ div.ribbon
 	right: 0px;
 	text-align: left;
 	display: block;
+	color: Black;
 }
 .Categories
 {
@@ -296,7 +316,7 @@ div.ribbon
 }
 li a.active, li a:hover
 {
-	color: #f47901;
+	color: #df2984;
 }
 a
 {
@@ -315,12 +335,12 @@ a
 }
 .headcontent
 {
-	background: #FFFFFF url(  '../Image/hd-4.png' ) no-repeat;
+	background: #FFFFFF url(   '../Image/hd-4.png' ) no-repeat;
 	height: 41px;
 }
 .footcontent
 {
-	background: #FFFFFF url(  '../Image/ft-4.png' ) no-repeat;
+	background: #FFFFFF url(   '../Image/ft-4.png' ) no-repeat;
 	height: 17px;
 	margin-top: -10px;
 }
@@ -340,11 +360,11 @@ a
 .content_area
 {
 	width: 717px; /*float: left;*/
-	margin-bottom:10px;
+	margin-bottom: 10px;
 }
 .content_area .block_inside
 {
-	background: #FFFFFF url(  '../Image/mid-4.png' ) repeat-y;
+	background: #FFFFFF url(   '../Image/mid-4.png' ) repeat-y;
 	height: auto;
 	overflow: auto;
 	min-height: 250px;
@@ -387,20 +407,22 @@ a
 
 #headfooter
 {
-	background: #c5e5f2 url( '../Image/hd-3.png' ) no-repeat;
+	background: #c5e5f2 url(  '../Image/hd-3.png' ) no-repeat;
 	height: 46px;
 	width: 970px;
 	margin-bottom: -22px;
 }
 #midfooter
 {
-	background: #c5e5f2 url( '../Image/mid-3.png' ) repeat-y;
+	background: #c5e5f2 url(  '../Image/mid-3.png' ) repeat-y;
 	width: 970px;
 	height: auto;
+	text-align: left;
+	padding-left: 20px;
 }
 #endfooter
 {
-	background: #c5e5f2 url( '../Image/ft-3.png' ) no-repeat;
+	background: #c5e5f2 url(  '../Image/ft-3.png' ) no-repeat;
 	height: 25px;
 	width: 970px;
 	margin-top: -12px;
