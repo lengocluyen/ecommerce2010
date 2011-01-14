@@ -5,8 +5,8 @@
 <%@ Register Src="UserControl/Content/Content.ascx" TagName="Content" TagPrefix="uc4" %>
 <%@ Register Src="UserControl/Left/Left.ascx" TagName="Left" TagPrefix="uc2" %>
 <%@ Register Src="UserControl/Right/Right.ascx" TagName="Right" TagPrefix="uc3" %>
-<%@ Register src="UserControl/Right/DetailProduct.ascx" tagname="DetailProduct" tagprefix="uc5" %>
-<%@ Register src="UserControl/YourCart.ascx" tagname="YourCart" tagprefix="uc6" %>
+<%@ Register Src="UserControl/Right/DetailProduct.ascx" TagName="DetailProduct" TagPrefix="uc5" %>
+<%@ Register Src="UserControl/YourCart.ascx" TagName="YourCart" TagPrefix="uc6" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -55,41 +55,33 @@
                         <div id="block_featured">
                             <uc1:SliceImage ID="SliceImage1" runat="server" />
                         </div>
-                        <div class="clear"></div>
-                            <img src="Image/shopping_cart.png" 
-                                style="float:right; margin-right:25px"/>
-                                  <div class="clear"></div>
+                        <div class="clear">
+                        </div>
+                        <img src="Image/shopping_cart.png" style="float: right; margin-right: 30px;" />
+                        <div class="clear">
+                        </div>
                         <div id="block_portfolio">
                             <!--Menu Left-->
                             &nbsp;<div id="Left">
                                 <uc2:Left ID="Left1" runat="server" />
                             </div>
                             <!--Right-->
-                            <div id="content_area" class="block">
-                                <div id="headcontent">
-                                    <div style="text-align: left; padding-top: 9px; padding-left: 20px; font-weight: bold;
-                                        text-transform: uppercase; color: #0c48a3;">
-                                        >> HOT PRODUCTS &nbsp;</div>
-                                </div>
-                                <!-- Nội dung sản phẩm -->
-                                <div class="block_inside">
-                                    <%--<uc3:Right ID="Right1" runat="server" />--%>
-                                    
-                                    <%--<uc5:DetailProduct ID="DetailProduct1" runat="server" />--%>
-                                    
-                                    <uc6:YourCart ID="YourCart1" runat="server" />
-                                    
-                                </div>
-                                <div id="footcontent">
-                                </div>
+                            <div id="right">
+                            
+                                <uc4:Content ID="Content1" runat="server" />
+                                <uc4:Content ID="Content2" runat="server" />
+                                
                             </div>
+                            
                         </div>
                     </div>
-                    <div class="clear"></div>
+                    <div class="clear">
+                    </div>
                     <div id="ft">
                     </div>
                 </div>
-                <div class="clear"></div>
+                <div class="clear">
+                </div>
                 <div id="footer">
                     <div id="headfooter">
                     </div>
