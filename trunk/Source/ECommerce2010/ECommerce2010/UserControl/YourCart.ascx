@@ -61,16 +61,16 @@
         <tr>
             <td valign="middle" colspan="7" align="left" class="title" style="width: 97%">
                 <div class="fl" align="left" style="float:left">
-                    <input type="button" value="Tiếp tục mua hàng"
-                        causesvalidation="false" class="inputCart">
-                    <input type="button" value="Thanh toán" name="btn_payment" id="btn_payment" class="inputCart">
-                    <input type="button" name="btnUpdate" id="btnUpdate" class="inputCart" onclick="updateItem()"
+                    <input class="btn" type="button" value="Tiếp tục mua hàng"
+                        causesvalidation="false">
+                    <input type="button" value="Thanh toán" name="btn_payment" id="btn_payment" class="btn" >
+                    <input type="button" name="btnUpdate" id="btnUpdate" class="btn"
                         value="Tính lại">
                 </div>
                 <div class="fr" align="right">
-                    <input type="button" name="btndel" id="btndel" class="inputCart" value="Xóa"">
+                    <input type="button" name="btndel" id="btndel" class="btn"  value="Xóa"">
                     <input type="button" name="btndelall" id="btndelall"
-                        class="inputCart" value="Xóa Hết">
+                        class="btn" value="Xóa Hết">
                 </div>
             </td>
         </tr>
