@@ -19,7 +19,7 @@
 
 <div class="box" style="width:700px; padding:10px 0 10px 0; height:auto">
 		<div style="float:left; margin-left:10px;">
-			<img class="small" src="../../Image/img/1.JPG" />
+			<img class="small" src="../../Image/img/2.JPG" />
 			<p>Photos: 1</p>
 		</div>
 		<div class="productDetail" 
@@ -45,7 +45,8 @@
 					</p>
 				</div>
 			</div>
-				<a href="#" class="button">Add to card</a>
+			<%--<img src= "../../Image/001_47.png" />--%>
+				<a href="#" class="button"> + Add to card</a>
 			<div class="clearall" style="clear:both"></div>
 			<span class="staron"></span><span class="staron"></span><span class="staron"></span><span class="staroff"></span><span class="staroff"></span>
 			<a href="#" style="font-size:11px;">(21 opinions)</a>

@@ -3,7 +3,7 @@
     <h4 class="NameProduct">
         Fujifilm FinePix HS10
     </h4>
-    <img src="../../Image/img/1.JPG" />
+    <img src="../../Image/img/4.JPG" />
     <p class="price">
         Price: 164.50$
     </p>
@@ -12,7 +12,7 @@
     <h4 class="NameProduct">
         Fujifilm FinePix HS10
     </h4>
-    <img src="../../Image/img/1.JPG" />
+    <img src="../../Image/img/2.JPG" />
     <p class="price">
         Price: 164.50$
     </p>
@@ -21,7 +21,7 @@
     <h4 class="NameProduct">
         Fujifilm FinePix HS10
     </h4>
-    <img src="../../Image/img/1.JPG" />
+    <img src="../../Image/img/3.JPG" />
     <p class="price">
         Price: 164.50$
     </p>
@@ -30,7 +30,7 @@
     <h4 class="NameProduct">
         Fujifilm FinePix HS10
     </h4>
-    <img src="../../Image/img/1.JPG" />
+    <img src="../../Image/img/2.JPG" />
     <p class="price">
         Price: 164.50$
     </p>
@@ -39,7 +39,7 @@
     <h4 class="NameProduct">
         Fujifilm FinePix HS10
     </h4>
-    <img src="../../Image/img/1.JPG" />
+    <img src="../../Image/img/4.JPG" />
     <p class="price">
         Price: 164.50$
     </p>
