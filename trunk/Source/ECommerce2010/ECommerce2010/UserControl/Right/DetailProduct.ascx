@@ -15,41 +15,62 @@
              <a class="button">Add to cart</a></div>
          </div>
     </div>--%>
-
-
-<div class="box" style="width:700px; padding:10px 0 10px 0; height:auto">
-		<div style="float:left; margin-left:10px;">
-			<img class="small" src="../../Image/img/2.JPG" />
-			<p>Photos: 1</p>
-		</div>
-		<div class="productDetail" 
-            style="width:500px; height:auto; float:left; margin-left:30px; text-align:left; line-height:21px; margin-right: 0px;">
-			Name: <h4 style="display:inline;">Testing Product</h4><br/>
-			Price: <span class="price">45$</span><br />
-			Description: <br />
-			<div class="expandField">
-				<div class="productDescription" style="float:left; font-size:11px; overflow:hidden;">
-					<p>
-						Xbox 360 250 GB to najnowsza wersja konsoli Xbox 360 firmy Microsoft. Charakteryzuje się ona mniejszymi wymiarami (o 30 procent względem poprzedniczek) - 270 na 75 na 264 mm, waży zaledwie 2,9 kg (3,5 kg w przypadku wcześniejszych modeli) i wewnętrzny dysk twardy o pojemności 250 GB.<br /><br />
-						Xbox 360 250 GB jako pierwszy model w historii Xbox 360 posiada także wbudowane WiFi w standardzie N - 802.11n, pozwalające na komunikację radiową padów i pilotów z częstotliwością 2,4 GHz.<br /><br />
-						Na uwagę zasługuje fakt, że konsolę wyposażono w zasilacz 135 W pobierający mniej prądu. Zadbano również o cichszą pracę urządzenia. Pod obudową znajdziemy układy wykonane w technologii 45 nanometrów. Natomiast na obudowie dostępne są dodatkowe przyciski: on/off, przycisk wysuwania tacki z sygnałem dźwiękowym, a także port pozwalający na podłączenie kontrolera Kinect. Zwiększono również ilość dostępnych portów USB - 3 z tyłu i 2 z przodu.<br /><br />
-						Xbox 360 250 GB może pochwalić się nowym designem - konsola jest dostępna wyłącznie w kolorze piano black.<br /><br />
-						Najważniejsze cechy nowego modelu:<br /><br />
-						<ul>
-							<li>30% mniejszy do poprzednika</li>
-							<li>30% mniejszy do poprzednika</li>
-							<li>30% mniejszy do poprzednika</li>
-							<li>30% mniejszy do poprzednika</li>
-							<li>30% mniejszy do poprzednika</li>
-						</ul>
-					</p>
-				</div>
-			</div>
-			<%--<img src= "../../Image/001_47.png" />--%>
-				<a href="#" class="button"> + Add to card</a>
-			<div class="clearall" style="clear:both"></div>
-			<span class="staron"></span><span class="staron"></span><span class="staron"></span><span class="staroff"></span><span class="staroff"></span>
-			<a href="#" style="font-size:11px;">(21 opinions)</a>
-		
-		</div>
-	</div>
+<div class="box" style="width: 700px; padding: 10px 0 10px 0; height: auto">
+    <div style="float: left; margin-left: 10px;">
+        <img class="small" src="../../Image/img/2.JPG" />
+        <p>
+            Photos: 1</p>
+    </div>
+    <div class="productDetail" style="width: 500px; height: auto; float: left; margin-left: 30px;
+        text-align: left; line-height: 21px; margin-right: 0px;">
+        Name:
+        <h4 style="display: inline;">
+            Testing Product</h4>
+        <br />
+        Price: <span class="price">45$</span><br />
+        Description:
+        <br />
+        <div class="expandField">
+            <div class="productDescription" style="float: left; font-size: 11px; overflow: hidden;">
+                <p>
+                    Xbox 360 250 GB to najnowsza wersja konsoli Xbox 360 firmy Microsoft. Charakteryzuje
+                    się ona mniejszymi wymiarami (o 30 procent względem poprzedniczek) - 270 na 75 na
+                    264 mm, waży zaledwie 2,9 kg (3,5 kg w przypadku wcześniejszych modeli) i wewnętrzny
+                    dysk twardy o pojemności 250 GB.<br />
+                    <br />
+                    Xbox 360 250 GB jako pierwszy model w historii Xbox 360 posiada także wbudowane
+                    WiFi w standardzie N - 802.11n, pozwalające na komunikację radiową padów i pilotów
+                    z częstotliwością 2,4 GHz.<br />
+                    <br />
+                    Na uwagę zasługuje fakt, że konsolę wyposażono w zasilacz 135 W pobierający mniej
+                    prądu. Zadbano również o cichszą pracę urządzenia. Pod obudową znajdziemy układy
+                    wykonane w technologii 45 nanometrów. Natomiast na obudowie dostępne są dodatkowe
+                    przyciski: on/off, przycisk wysuwania tacki z sygnałem dźwiękowym, a także port
+                    pozwalający na podłączenie kontrolera Kinect. Zwiększono również ilość dostępnych
+                    portów USB - 3 z tyłu i 2 z przodu.<br />
+                    <br />
+                    Xbox 360 250 GB może pochwalić się nowym designem - konsola jest dostępna wyłącznie
+                    w kolorze piano black.<br />
+                    <br />
+                    Najważniejsze cechy nowego modelu:<br />
+                    <br />
+                    <ul>
+                        <li>30% mniejszy do poprzednika</li>
+                        <li>30% mniejszy do poprzednika</li>
+                        <li>30% mniejszy do poprzednika</li>
+                        <li>30% mniejszy do poprzednika</li>
+                        <li>30% mniejszy do poprzednika</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <%--<img src= "../../Image/001_47.png" />--%>
+        <a href="#" class="button">+ Add to card</a><br />
+        <div class="clearall" style="clear: both">
+      
+        </div>
+        <span class="staron"></span><span class="staron"></span><span class="staron"></span>
+        <span class="staroff"></span><span class="staroff"></span><a href="#" style="font-size: 11px;">
+            (21 opinions)</a>
+    </div>
+</div>
