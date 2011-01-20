@@ -13,11 +13,14 @@
     <title>.: Shoping :.</title>
     <link href="Style/MasterPage.css" type="text/css" rel="Stylesheet" />
     <link href="Style/Right.css" type="text/css" rel="Stylesheet" />
+    <link href="Style/btn.css" type="text/css" rel="Stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
     <center>
         <div id="main">
             <div class="container">
@@ -67,12 +70,22 @@
                             </div>
                             <!--Right-->
                             <div id="right">
-                            
-                                <uc4:Content ID="Content1" runat="server" />
-                                <uc4:Content ID="Content2" runat="server" />
-                                
+                                <div class="content_area" class="block">
+                                    <div class="headcontent">
+                                        <div class="title">
+                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </div>
+                                    </div>
+                                    <!-- Nội dung sản phẩm -->
+                                    <div class="block_inside">
+                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </div>
+                                    <div class="footcontent">
+                                    </div>
+                                </div>
                             </div>
-                            
                         </div>
                     </div>
                     <div class="clear">
@@ -86,8 +99,14 @@
                     <div id="headfooter">
                     </div>
                     <div id="midfooter">
-                    <p>Address: Da lat, VietNam <br /> Phone: 123456789 <br /> Email:abc@gmail.com</p>
-                    <h3>Designed by FlyChipsTeam</h3>
+                        <p>
+                            Address: Da lat, VietNam
+                            <br />
+                            Phone: 123456789
+                            <br />
+                            Email:abc@gmail.com</p>
+                        <h3>
+                            Designed by FlyChipsTeam</h3>
                     </div>
                     <div id="endfooter">
                     </div>
