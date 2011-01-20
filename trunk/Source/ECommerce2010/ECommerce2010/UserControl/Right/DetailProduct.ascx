@@ -18,26 +18,24 @@
     </div>--%>
 <div class="box" style="width: 700px; padding: 10px 0 10px 0; height: auto">
     <div style="float: left; margin-left: 10px;">
-        <img class="small" src="../../Image/img/2.JPG" />
+        <img class="small" src=" <%# LoadDefault().Image %>" />
         <p>
             Photos: 1</p>
     </div>
     <div class="productDetail" style="width: 500px; height: auto; float: left; margin-left: 30px;
         text-align: left; line-height: 21px; margin-right: 0px;">
-        Name:
+        Name: <%# LoadDefault().Name %>
         <h4 style="display: inline;">
             </h4>
         <br />
-        Price: <span class="price">45$</span><br />
-        Description:
+        Price: <span class="price"> <%# LoadDefault().Price %></span><br />
+        Description:  
         <br />
         <div class="expandField">
             <div class="productDescription" style="float: left; font-size: 11px; overflow: hidden;">
-                
-                </p>
+                <p><%# LoadDefault().Description %></p>
             </div>
         </div>
-        <%--<img src= "../../Image/001_47.png" />--%>
         <a href="#" class="button">+ Add to card</a><br />
         <div class="clearall" style="clear: both">
       
