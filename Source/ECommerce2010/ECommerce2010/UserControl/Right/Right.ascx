@@ -3,15 +3,18 @@
     <ContentTemplate>
         <asp:Repeater ID="Repeater1" runat="server">
             <ItemTemplate>
-                <div class="Sp">
-                    <h4 class="NameProduct">
-                        <%# Eval("Name") %>
-                    </h4>
-                    <img src="<%# Eval("Image") %>" />
-                    <p class="price">
-                        Price: <%# Eval("Price") %>
-                    </p>
-                </div>
+                <a href="../../DetailProduct.aspx?act=detailprodct&id=<%#Eval("ProductID")%>">
+                    <div class="Sp">
+                        <h4 class="NameProduct">
+                            <%# Eval("Name") %>
+                        </h4>
+                        <img src="<%# Eval("Image") %>" />
+                        <p class="price">
+                            Price:
+                            <%# Eval("Price") %>
+                        </p>
+                    </div>
+                </a>
             </ItemTemplate>
         </asp:Repeater>
     </ContentTemplate>
