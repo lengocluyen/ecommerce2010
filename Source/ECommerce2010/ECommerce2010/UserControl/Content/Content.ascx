@@ -10,11 +10,11 @@
     </div>
     <!-- Nội dung sản phẩm -->
     <div class="block_inside">
-        <%--<uc2:Right ID="Right1" runat="server" />--%>
+        <uc2:Right ID="Right1" runat="server" />
         
         <%--<uc3:DetailProduct ID="DetailProduct1" runat="server" />--%>
         
-        <uc4:YourCart ID="YourCart1" runat="server" />
+        <%--<uc4:YourCart ID="YourCart1" runat="server" />--%>
         
     </div>
     <div class="footcontent">

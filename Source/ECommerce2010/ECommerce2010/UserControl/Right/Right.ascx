@@ -1,46 +1,18 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Right.ascx.cs" Inherits="ECommerce2010.UserControl.Right.Right" %>
-<div class="Sp">
-    <h4 class="NameProduct">
-        Fujifilm FinePix HS10
-    </h4>
-    <img src="../../Image/img/4.JPG" />
-    <p class="price">
-        Price: 164.50$
-    </p>
-</div>
-<div class="Sp">
-    <h4 class="NameProduct">
-        Fujifilm FinePix HS10
-    </h4>
-    <img src="../../Image/img/2.JPG" />
-    <p class="price">
-        Price: 164.50$
-    </p>
-</div>
-<div class="Sp">
-    <h4 class="NameProduct">
-        Fujifilm FinePix HS10
-    </h4>
-    <img src="../../Image/img/3.JPG" />
-    <p class="price">
-        Price: 164.50$
-    </p>
-</div>
-<div class="Sp">
-    <h4 class="NameProduct">
-        Fujifilm FinePix HS10
-    </h4>
-    <img src="../../Image/img/2.JPG" />
-    <p class="price">
-        Price: 164.50$
-    </p>
-</div>
-<div class="Sp">
-    <h4 class="NameProduct">
-        Fujifilm FinePix HS10
-    </h4>
-    <img src="../../Image/img/4.JPG" />
-    <p class="price">
-        Price: 164.50$
-    </p>
-</div>
+<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+    <ContentTemplate>
+        <asp:Repeater ID="Repeater1" runat="server">
+            <ItemTemplate>
+                <div class="Sp">
+                    <h4 class="NameProduct">
+                        <%# Eval("Name") %>
+                    </h4>
+                    <img src="<%# Eval("Image") %>" />
+                    <p class="price">
+                        Price: <%# Eval("Price") %>
+                    </p>
+                </div>
+            </ItemTemplate>
+        </asp:Repeater>
+    </ContentTemplate>
+</asp:UpdatePanel>
