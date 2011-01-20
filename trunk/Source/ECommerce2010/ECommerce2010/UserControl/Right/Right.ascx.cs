@@ -10,14 +10,15 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
-
+using ECommerce2010.Core;
 namespace ECommerce2010.UserControl.Right
 {
     public partial class Right : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Repeater1.DataSource = Product.All().ToList();
+            Repeater1.DataBind();
         }
     }
 }

@@ -17,7 +17,7 @@ namespace ECommerce2010.UserControl.Right
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+          
         }
     }
 }
