@@ -43,13 +43,13 @@ namespace ECommerce2010.UserControl.Right
                 Response.Redirect("Default.aspx");
             return 0;
         }
-        List<YourCart> lstcart = new List<YourCart>();
+        List<YourCarts> lstcart = new List<YourCarts>();
         protected void Button1_Click(object sender, EventArgs e)
         {
             Product i = LoadDefault();
             int sl=1;
-            YourCart j = new YourCart();
-            foreach (YourCart x in lstcart.ToList())
+            YourCarts j = new YourCarts();
+            foreach (YourCarts x in lstcart.ToList())
             {
                 
             }
