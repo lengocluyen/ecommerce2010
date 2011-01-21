@@ -48,13 +48,12 @@ namespace ECommerce2010.UserControl.Right
             Product i = LoadDefault();
             int id = GetAnnID();
             UserSession userSession = new UserSession();
-            
+            userSession.ListCart = userSession.ListCart.Count >0 ? userSession.ListCart : new List<YourCarts>();
             // Gan vao
             List<YourCarts> lstCarts = userSession.ListCart;
-            //lstCarts.Add(new YourCarts());
             userSession.ListCart = lstCarts;
             YourCarts pr = new YourCarts();
-            if (lstCarts == null)
+            if (lstCarts.Count <=0)
             {
                 pr = new YourCarts
                                    (
@@ -66,23 +65,31 @@ namespace ECommerce2010.UserControl.Right
             }
             else
             {
+                //YourCarts tam = new YourCarts();
+                //YourCarts tam = lstCarts.Find(p => p.Item1.ProductID == id);
+
+                bool found = false;
                 foreach (YourCarts j in lstCarts)
                 {
                     if (j.Item1.ProductID == id)
                     {
+                        found = true;
                         j.Soluong++;
                         userSession.ListCart = lstCarts;
+                        break;
                     }
-                    else
-                    {
-                        pr = new YourCarts
+                   
+                }
+
+                if (!found)
+                {
+                    pr = new YourCarts
                         (
                             pr.Item1 = i,
                             pr.Soluong = 1
                         );
-                        lstCarts.Add(pr);
-                        userSession.ListCart = lstCarts;
-                    }
+                    lstCarts.Add(pr);
+                    userSession.ListCart = lstCarts;
                 }
             }
         }
