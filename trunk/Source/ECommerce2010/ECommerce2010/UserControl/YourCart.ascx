@@ -120,21 +120,20 @@
                                 1
                             </td>
                             <td valign="middle" class="title" style="width: auto;" align="center" style="width: 25%">
-                                <img src=<%# Eval("Image")%>">
-                               
+                                <img src="<%# DataBinder.Eval(Container.DataItem,"Item1.Image")%>" /><%--<a href="../Image/img/1.JPG"></a>--%>
                             </td>
                             <td valign="middle" class="title" style="width: 100px;" align="left" style="width: 20%">
-                                <a href=""><%# Eval("Name")%></a>
+                                <a href=""><%# DataBinder.Eval(Container.DataItem,"Item1.Name")%></a>
                             </td>
                             <td valign="middle" class="title" style="width: 100px;" align="right" style="width: 20%">
-                                <span class="price"><%# Eval("Price")%></span>
+                                <span class="price"><%# DataBinder.Eval(Container.DataItem,"Item1.Price")%></span>
                             </td>
                             <td valign="middle" class="title" style="width: 45px;" align="right" style="width: 10%">
-                                <input type="text" id="sl" name="txtQuantity" style="width: 20px;" value="1">
+                                <input type="text" id="sl" name="txtQuantity" style="width: 20px;" value="<%# DataBinder.Eval(Container.DataItem,"Soluong") %>">
                                
                             </td>
                             <td valign="middle" class="title" style="width: 90px;" align="right" style="width: 15%">
-                                <span class="price">90.000 VNĐ</span>
+                                <span class="price"></span>
                             </td>
                             <td valign="middle" align="center" style="width: 5%">
                                 <input type="checkbox" name="chkChoice" value="4879" checked="true">

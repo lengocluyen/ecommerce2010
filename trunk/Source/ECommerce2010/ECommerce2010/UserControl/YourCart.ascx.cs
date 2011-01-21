@@ -23,7 +23,11 @@ namespace ECommerce2010.UserControl
             List<YourCarts> lstCarts = userSession.ListCart;
             Repeater1.DataSource = lstCarts;
             Repeater1.DataBind();
+        }
 
+        public decimal UnitPrice(int sl, decimal price)
+        {
+            return sl * price;
         }
     }
 }
