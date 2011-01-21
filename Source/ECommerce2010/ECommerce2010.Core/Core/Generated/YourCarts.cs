@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ECommerce2010.Core.Core.Generated
+namespace ECommerce2010.Core
 {
-    public class YourCart
+    public class YourCarts
     {
         Product Item;
 
@@ -21,11 +21,11 @@ namespace ECommerce2010.Core.Core.Generated
             get { return soluong; }
             set { soluong = value; }
         }
-        public YourCart()
+        public YourCarts()
         {
 
         }
-        public YourCart(Product i, int sl)
+        public YourCarts(Product i, int sl)
         {
             Item1 = i;
             Soluong=sl;
