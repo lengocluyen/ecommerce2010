@@ -31,7 +31,6 @@ namespace ECommerce2010.UserControl.Right
             }
             return ann;
         }
-   
         public int GetAnnID()
         {
             if (Request.QueryString["id"] != null)
@@ -43,18 +42,49 @@ namespace ECommerce2010.UserControl.Right
                 Response.Redirect("Default.aspx");
             return 0;
         }
-        List<YourCarts> lstcart = new List<YourCarts>();
+      
         protected void Button1_Click(object sender, EventArgs e)
         {
             Product i = LoadDefault();
-            int sl=1;
-            YourCarts j = new YourCarts();
-            foreach (YourCarts x in lstcart.ToList())
+            int id = GetAnnID();
+            UserSession userSession = new UserSession();
+            
+            // Gan vao
+            List<YourCarts> lstCarts = userSession.ListCart;
+            //lstCarts.Add(new YourCarts());
+            userSession.ListCart = lstCarts;
+            YourCarts pr = new YourCarts();
+            if (lstCarts == null)
             {
-                
+                pr = new YourCarts
+                                   (
+                                       pr.Item1 = i,
+                                       pr.Soluong = 1
+                                   );
+                lstCarts.Add(pr);
+                userSession.ListCart = lstCarts;
             }
-
+            else
+            {
+                foreach (YourCarts j in lstCarts)
+                {
+                    if (j.Item1.ProductID == id)
+                    {
+                        j.Soluong++;
+                        userSession.ListCart = lstCarts;
+                    }
+                    else
+                    {
+                        pr = new YourCarts
+                        (
+                            pr.Item1 = i,
+                            pr.Soluong = 1
+                        );
+                        lstCarts.Add(pr);
+                        userSession.ListCart = lstCarts;
+                    }
+                }
+            }
         }
-        //public List<Product> 
     }
 }
