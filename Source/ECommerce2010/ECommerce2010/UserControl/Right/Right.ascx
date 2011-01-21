@@ -3,12 +3,12 @@
     <ContentTemplate>
         <asp:Repeater ID="Repeater1" runat="server">
             <ItemTemplate>
-                <a href="../../DetailProduct.aspx?act=detailprodct&id=<%#Eval("ProductID")%>">
+                <a href="../../DetailProduct.aspx?act=detailprodct&id=<%#Eval("ProductID")%>" >
                     <div class="Sp">
                         <h4 class="NameProduct">
                             <%# Eval("Name") %>
                         </h4>
-                        <img src="<%# Eval("Image") %>" />
+                        <img border="0" src="<%# Eval("Image") %>" />
                         <p class="price">
                             Price:
                             <%# Eval("Price") %>
