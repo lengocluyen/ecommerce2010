@@ -10,7 +10,6 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
-using ECommerce2010.Core;
 
 namespace ECommerce2010.UserControl
 {
@@ -20,11 +19,5 @@ namespace ECommerce2010.UserControl
         {
 
         }
-        void SL()
-        {
-            
-        }
-
     }
-
 }
