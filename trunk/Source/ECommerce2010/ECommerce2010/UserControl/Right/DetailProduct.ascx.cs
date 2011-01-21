@@ -11,15 +11,17 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using ECommerce2010.Core;
+using System.Web.UI.MobileControls;
+using System.Collections.Generic;
 namespace ECommerce2010.UserControl.Right
 {
     public partial class DetailProduct : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            LoadDefault();
+            
         }
-        protected Product LoadDefault()
+        public Product LoadDefault()
         {
             int annID = GetAnnID();
             Product ann = new Product();
@@ -30,7 +32,7 @@ namespace ECommerce2010.UserControl.Right
             return ann;
         }
    
-        protected int GetAnnID()
+        public int GetAnnID()
         {
             if (Request.QueryString["id"] != null)
             {
@@ -41,5 +43,14 @@ namespace ECommerce2010.UserControl.Right
                 Response.Redirect("Default.aspx");
             return 0;
         }
+        List<YourCart> lstcart;
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            //Product i = LoadDefault();
+            //int sl=1;
+            //YourCart j = new YourCart();
+
+        }
+        //public List<Product> 
     }
 }
