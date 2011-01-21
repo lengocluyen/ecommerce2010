@@ -135,6 +135,22 @@ namespace ECommerce2010.Core
             }
         }
 
+        public List<YourCarts> ListCart
+        {
+            get
+            {
+                if (ContainsInSession("ListCart"))
+                {
+                    return GetFromSession("ListCart") as List<YourCarts>;
+                }
+                return null;
+            }
+            set
+            {
+                SetInSession("ListCart", value);
+            }
+        }
+
 
         public void ClearSession()
         {

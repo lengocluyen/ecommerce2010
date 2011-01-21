@@ -16,6 +16,6 @@ namespace ECommerce2010.Core
         string CaptchaImageText { get; set; }
         DateTime TimeUserLogin { get; set; }
         Role RoleCurrentUser { get; set; }
-      
+        List<YourCarts> ListCart { get; set; }
     }
 }

@@ -61,5 +61,11 @@ namespace ECommerce2010.Core
             get { return _webContext.TimeUserLogin; }
             set { _webContext.TimeUserLogin = value; }
         }
+
+        public List<YourCarts> ListCart
+        {
+            get { return _webContext.ListCart; }
+            set { _webContext.ListCart = value; }
+        }
     }
 }
