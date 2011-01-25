@@ -13,13 +13,27 @@ using System.Xml.Linq;
 using ECommerce2010.Core;
 using System.Web.UI.MobileControls;
 using System.Collections.Generic;
+using StructureMap;
 namespace ECommerce2010.UserControl.Right
 {
     public partial class DetailProduct : System.Web.UI.UserControl
     {
+        public Product products = new Product();
+        protected IUserSession _userSession;
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            _userSession = ObjectFactory.GetInstance<IUserSession>();
+            HandleLanguage();
+            products = LoadDefault();
+        }
+        public void HandleLanguage()
+        {
+            bool isEng = IsEnglish();
+            lblPhoto.Text = isEng ? Resources.English.photo : Resources.Poland.photo;
+            lblPrice.Text = isEng ? Resources.English.Price : Resources.Poland.Price;
+            lblName.Text = isEng ? Resources.English.NameProduct : Resources.Poland.NameProduct;
+            lblDescription.Text = isEng ? Resources.English.description : Resources.Poland.description;
+            Button1.Text = isEng ? Resources.English.AddYourCart : Resources.Poland.AddYourCart;
         }
         public Product LoadDefault()
         {
@@ -31,67 +45,69 @@ namespace ECommerce2010.UserControl.Right
             }
             return ann;
         }
+        public string GetObjectByLanguage(string ob)
+        {
+            int lg = (int)Languages.English;
+            string lang = QueryHelper.GetQueryString(Request, "lang");
+            switch (lang)
+            {
+                case "po":
+                    lg = (int)Languages.Poland;
+                    break;
+                case "en":
+                default:
+                    lg = (int)Languages.English;
+                    break;
+            }
+            return Utils.GetStringInString(ob.ToString(), Utils.flychips, lg);
+        }
         public int GetAnnID()
         {
-            if (Request.QueryString["id"] != null)
-            {
-                int annID = int.Parse(Request.QueryString["id"]);
-                return annID;
-            }
+            int id = LibConvert.ConvertToInt(QueryHelper.GetQueryString(Request, "value"), 0);
+            if (id != 0) return id;
             else
                 Response.Redirect("Default.aspx");
             return 0;
         }
-      
+        public bool IsEnglish()
+        {
+
+            string lang = QueryHelper.GetQueryString(Request, "lang");
+            switch (lang)
+            {
+                case "po":
+                    return false;
+                case "ed":
+                default:
+                    return true;
+            }
+        }
+        public bool IsExistProductInCart(YourCarts item)
+        {
+            List<YourCarts> rs = _userSession.ListCart;
+            foreach (YourCarts i in rs)
+                if (i.Item.ProductID == item.Item.ProductID)
+                {
+                    i.Soluong++;
+                    _userSession.ListCart = rs;
+                    return true;
+                }
+            return false;
+        }
+        public List<YourCarts> listAdd = new List<YourCarts>();
+        public void AddToCart(YourCarts item)
+        {
+            if (_userSession.ListCart == null) _userSession.ListCart = new List<YourCarts>();
+            if(!IsExistProductInCart(item))
+                _userSession.ListCart.Add(item);
+        }
         protected void Button1_Click(object sender, EventArgs e)
         {
             Product i = LoadDefault();
             int id = GetAnnID();
-            UserSession userSession = new UserSession();
-            userSession.ListCart = userSession.ListCart.Count >0 ? userSession.ListCart : new List<YourCarts>();
-            // Gan vao
-            List<YourCarts> lstCarts = userSession.ListCart;
-            userSession.ListCart = lstCarts;
-            YourCarts pr = new YourCarts();
-            if (lstCarts.Count <=0)
-            {
-                pr = new YourCarts
-                                   (
-                                       pr.Item1 = i,
-                                       pr.Soluong = 1
-                                   );
-                lstCarts.Add(pr);
-                userSession.ListCart = lstCarts;
-            }
-            else
-            {
-                //YourCarts tam = new YourCarts();
-                //YourCarts tam = lstCarts.Find(p => p.Item1.ProductID == id);
-
-                bool found = false;
-                foreach (YourCarts j in lstCarts)
-                {
-                    if (j.Item1.ProductID == id)
-                    {
-                        found = true;
-                        j.Soluong++;
-                        userSession.ListCart = lstCarts;
-                        break;
-                    }
-                   
-                }
-
-                if (!found)
-                {
-                    pr = new YourCarts
-                        (
-                            pr.Item1 = i,
-                            pr.Soluong = 1
-                        );
-                    lstCarts.Add(pr);
-                    userSession.ListCart = lstCarts;
-                }
-            }
+            YourCarts pr = new YourCarts(i,1);
+            AddToCart(pr);
+            Response.Redirect(Request.Url.AbsoluteUri);
         }
     }
 }
