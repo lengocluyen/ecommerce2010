@@ -1,12 +1,13 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Right.ascx.cs" Inherits="ECommerce2010.UserControl.Right.Right" %>
-<asp:UpdatePanel ID="UpdatePanel1" runat="server">
-    <ContentTemplate>
+<%@ Register TagPrefix="UCPager" Namespace="ECommerce2010.Core" Assembly="ECommerce2010.Core" %>
+<%--<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+    <ContentTemplate>--%>
         <asp:Repeater ID="Repeater1" runat="server">
             <ItemTemplate>
-                <a href="../../DetailProduct.aspx?act=detailprodct&id=<%#Eval("ProductID")%>" >
+                <a href="Default.aspx?lang=<%=language%>&do=productdetail&value=<%#Eval("ProductID")%>">
                     <div class="Sp">
                         <h4 class="NameProduct">
-                            <%# Eval("Name") %>
+                            <%# GetObjectByLanguage(Eval("Name"))%>
                         </h4>
                         <img border="0" src="<%# Eval("Image") %>" />
                         <p class="price">
@@ -17,5 +18,9 @@
                 </a>
             </ItemTemplate>
         </asp:Repeater>
-    </ContentTemplate>
-</asp:UpdatePanel>
+        <div class="clear"></div>
+        <div class="results">
+            <UCPager:Pager ID="pager" runat="server" />
+        </div>
+   <%-- </ContentTemplate>
+</asp:UpdatePanel>--%>
