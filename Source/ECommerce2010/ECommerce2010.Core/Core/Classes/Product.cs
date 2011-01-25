@@ -11,9 +11,19 @@ namespace ECommerce2010.Core
     public partial class Product
     {
         // all method is static 
-        public static PagedList<Product> GetRolePaging(int page, int pagesize)
+        public static PagedList<Product> GetProductPaging(string category, int page, int pagesize)
         {
-            PagedList<Product> list = Product.GetPaged(page -1, pagesize);
+            page--;
+            PagedList<Product> list;
+            int categoryID = LibConvert.ConvertToInt(category,0);
+            if (categoryID != 0)
+            {
+                var query = All().Where(p => p.CategoryID == categoryID);
+                query = query.OrderByDescending(p => p.CreateDate);
+                list = new PagedList<Product>(query,page,pagesize) ;
+            }
+            else
+                list = Product.GetPaged(page, pagesize, "CreateDate DESC");
             return list;
         }
     }

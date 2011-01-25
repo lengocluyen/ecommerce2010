@@ -31,6 +31,7 @@ namespace ECommerce2010.Core
         public int CategoryID { get; set; }
         public int ManufactoryID { get; set; }
         public bool IsActive { get; set; }
+        public DateTime CreateDate { get; set; }
         #endregion
 
         public Product()

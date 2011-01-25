@@ -7,12 +7,12 @@ namespace ECommerce2010.Core
 {
     public class YourCarts
     {
-        Product Item;
+        Product item;
 
-        public Product Item1
+        public Product Item
         {
-            get { return Item; }
-            set { Item = value; }
+            get { return item; }
+            set { item = value; }
         }
         int soluong = 0;
 
@@ -27,7 +27,7 @@ namespace ECommerce2010.Core
         }
         public YourCarts(Product i, int sl)
         {
-            Item1 = i;
+            item = i;
             Soluong=sl;
         }
     }

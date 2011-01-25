@@ -22,7 +22,10 @@ namespace ECommerce2010.Core
         {
             get { return getAppSetting(typeof(string), "RootURL").ToString(); }
         }
-
+        public string EmailAdmin
+        {
+            get { return getAppSetting(typeof(string), "EmailAdmin").ToString(); }
+        }
         private static object getAppSetting(Type expectedType, string key)
         {
             string value = ConfigurationManager.AppSettings.Get(key);

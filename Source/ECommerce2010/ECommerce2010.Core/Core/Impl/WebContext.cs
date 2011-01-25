@@ -143,7 +143,7 @@ namespace ECommerce2010.Core
                 {
                     return GetFromSession("ListCart") as List<YourCarts>;
                 }
-                return new List<YourCarts>();
+                return null;
             }
             set
             {
