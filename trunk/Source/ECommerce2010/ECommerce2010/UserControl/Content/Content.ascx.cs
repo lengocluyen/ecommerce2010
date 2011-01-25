@@ -19,5 +19,30 @@ namespace ECommerce2010.UserControl.Content
         {
 
         }
+        public void LoadControlRegister(string title)
+        {
+            ttitleContent.InnerText = title;
+            phContent.Controls.Add(Page.LoadControl("./UserControl/Right/Register.ascx"));
+        }
+        public void LoadControlProductNew(string title)
+        {
+            ttitleContent.InnerText = title;
+            phContent.Controls.Add(Page.LoadControl("./UserControl/Right/Right.ascx"));
+        }
+        public void LoadControlContactUs(string title)
+        {
+            ttitleContent.InnerText = title;
+            phContent.Controls.Add(Page.LoadControl("./UserControl/Right/ContactUs.ascx"));
+        }
+        public void LoadControlProductDetails(string title)
+        {
+            ttitleContent.InnerText = title;
+            phContent.Controls.Add(Page.LoadControl("./UserControl/Right/DetailProduct.ascx"));
+        }
+        public void LoadControlYourCart(string title)
+        {
+            ttitleContent.InnerText = title;
+            phContent.Controls.Add(Page.LoadControl("./UserControl/Right/YourCart.ascx"));
+        }
     }
 }

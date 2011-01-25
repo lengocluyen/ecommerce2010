@@ -5,48 +5,13 @@
         <div class="gallery gallery2">
             <div class="holder">
                 <ul>
-                    <li>
-                        <img src="../../Image/img/1.JPG" alt="image"/></li>
-                    <li>
-                        <img src="../../Image/img/2.JPG" alt="image"/></li>
-                    <li>
-                        <img src="../../Image/img/3.JPG" alt="image"/></li>
-                    <li>
-                        <img src="../../Image/img/1.JPG" alt="image"/></li>
-                    <li>
-                        <img src="../../Image/img/2.JPG" alt="image"/></li>
-                    <li>
-                        <img src="../../Image/img/3.JPG" alt="image"/></li>
-                    <li>
-                        <img src="../../Image/img/1.JPG" alt="image"/></li>
-                    <li>
-                        <img src="../../Image/img/2.JPG" alt="image"/></li>
-                </ul>
+                <asp:Repeater ID="rptImage" runat="server">
+                <ItemTemplate>
+                <li><a href="Default.aspx?lang=<%=language%>&do=productdetail&value=<%#Eval("ProductID")%>"><img src="<%#Eval("Image") %>" alt="<%#GetObjectByLanguage(Eval("Name")) %>" /></a></li>
+                </ItemTemplate>
+                </asp:Repeater>
+                    </ul>
             </div>
-            <%--<div class="control">
-                <a href="#" class="prev">prev</a> <a href="#" class="next">next</a> <a href="#" class="start">
-                    play</a> <a href="#" class="stop">stop</a>
-            </div>--%>
         </div>
-         <%--<marquee behavior="scroll" loop="true">
-     <ul>
-            <li>
-                <img src="../../Image/img/1.JPG" /></li>
-            <li>
-                <img src="../../Image/img/2.JPG" /></li>
-            <li>
-                <img src="../../Image/img/3.JPG"/></li>
-            <li>
-                <img src="../../Image/img/1.JPG" /></li>
-            <li>
-                <img src="../../Image/img/2.JPG" /></li>
-            <li>
-                <img src="../../Image/img/3.JPG" /></li>
-            <li>
-                <img src="../../Image/img/1.JPG" /></li>
-            <li>
-                <img src="../../Image/img/2.JPG" /></li>
-        </ul>
-    </marquee>--%>
     </div>
 </div>
