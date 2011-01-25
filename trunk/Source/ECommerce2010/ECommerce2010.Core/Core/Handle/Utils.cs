@@ -26,8 +26,20 @@ namespace ECommerce2010.Core
         Presentation
 
     }
+    public enum Languages
+    {
+        English,
+        Poland
+    }
     public class Utils
     {
+        public const string flychips = "|FLYCHIPS|";
+        public static string GetStringInString(string source, string a,int i)
+        {
+            string[] sr = {a};
+            string[] s = source.Split(sr, StringSplitOptions.None);
+            return s[i];
+        }
         public static string GetAbsolutelyLink(string linkImage)
         {
             string link =".."+linkImage.Replace(@"\","/");

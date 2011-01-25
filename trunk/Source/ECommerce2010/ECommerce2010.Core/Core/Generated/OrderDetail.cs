@@ -26,6 +26,7 @@ namespace ECommerce2010.Core
         public decimal UnitPrice { get; set; }
         public int OrderID { get; set; }
         public int ProductID { get; set; }
+        public int Qualitity { get; set; }
         #endregion
 
         public OrderDetail()

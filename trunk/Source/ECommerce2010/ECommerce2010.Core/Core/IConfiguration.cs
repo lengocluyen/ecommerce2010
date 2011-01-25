@@ -6,5 +6,6 @@ namespace ECommerce2010.Core
         int ItemperPageUser { get; }
         string RootURL { get; }
         string AdminSiteURL { get; }
+        string EmailAdmin { get; }
     }
 }
