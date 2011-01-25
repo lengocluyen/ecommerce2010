@@ -1,43 +1,26 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="DetailProduct.ascx.cs"
     Inherits="ECommerce2010.UserControl.Right.DetailProduct" %>
-<%@ Import Namespace="ECommerce2010.Core" %>
-<%--<div style="text-align: left">
-    <div style="float: left">
-        <img class="imgsp" src="../../Image/img/1.JPG" />
-    </div>
-    <div style="float: left; padding-left:20px">
-        <h4>
-         Fujifilm FinePix HS10</h4>
-        <p style="color: red">
-            Price: 259.01$
-        </p>
-        <p> jdjdjd ddjdjdj djdjd </p>
-         <div>
-             <a class="button">Add to cart</a></div>
-         </div>
-    </div>--%>
 <div class="box" style="width: 700px; padding: 10px 0 10px 0; height: auto">
-    <% Product i = LoadDefault(); %>
-    <div style="float: left; margin-left: 10px;">
-        <img class="small" src=" <%= i.Image %>" />
+     <div style="float: left; margin-left: 10px;">
+        <img class="small" src=" <%= products.Image %>" />
         <p>
-            Photos: 1</p>
+            <asp:Label ID="lblPhoto" runat="server"></asp:Label>: 1</p>
     </div>
     <div class="productDetail" style="width: 500px; height: auto; float: left; margin-left: 30px;
         text-align: left; line-height: 21px; margin-right: 0px;">
-        Name:
-        <%= i.Name%>
+        <asp:Label ID="lblName" runat="server"></asp:Label>:
+        <%= GetObjectByLanguage(products.Name)%>
         <h4 style="display: inline;">
         </h4>
         <br />
-        Price: <span class="price">
-            <%= i.Price%></span><br />
-        Description:
+        <asp:Label ID="lblPrice" runat="server"></asp:Label>: <span class="price">
+            <%= products.Price%></span><br />
+        <asp:Label ID="lblDescription" runat="server"></asp:Label>:
         <br />
         <div class="expandField">
             <div class="productDescription" style="float: left; font-size: 11px; overflow: hidden;">
                 <p>
-                    <%=  i.Description%></p>
+                    <%=GetObjectByLanguage(products.Description)%></p>
             </div>
         </div>
         <div style="clear: both">
