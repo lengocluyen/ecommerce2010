@@ -4,7 +4,7 @@
 	padding: 0px;
 	background-color: #131211;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	color: black;
+	color: #6c6c6f;
 	font-size: 13px;
 	line-height: 19px;
 	background: #c5e5f2 url(   '../Image/bg.png' ) repeat-x;
@@ -469,6 +469,7 @@ a
 	font-weight: bold;
 	padding-left: 30px;
 	text-align: left;
+	color: #6c6c6f;
 }
 .infoField11{width:15%}
 .infoField2
