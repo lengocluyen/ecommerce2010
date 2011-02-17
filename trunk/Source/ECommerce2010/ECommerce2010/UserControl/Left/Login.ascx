@@ -48,7 +48,7 @@
             <div style="height: 5px;">
             </div>
             <div style="text-align: center;">
-                <asp:Button ID="btLogout" CssClass="button1" runat="server" OnClick="btLogout_Click" />
+                <asp:Button CssClass="btn" ID="btLogout"  runat="server" OnClick="btLogout_Click" />
             </div>
         </asp:Panel>
     </div>
