@@ -49,7 +49,7 @@
     </div>
     <!---Submit-->
     <div style="float: left; width: 100%; padding-top: 15px; text-align: center">
-        <asp:Button ID="btButtonHK" CssClass="button1" runat="server" OnClick="btButton_Click" OnClientClick="tinyMCE.triggerSave(false,true);"
+        <asp:Button ID="btButtonHK" CssClass="btn" runat="server" OnClick="btButton_Click" OnClientClick="tinyMCE.triggerSave(false,true);"
             ValidationGroup="Contacts" />
     </div>
 

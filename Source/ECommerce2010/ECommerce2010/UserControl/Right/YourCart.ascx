@@ -67,13 +67,13 @@
         <tr>
             <td valign="middle" colspan="7" align="left" class="title" style="width: 97%;padding:10px">
                 <div class="fl" align="left" style="float: left">
-                    <asp:Button CssClass="button1" ID="btContinueShopping" runat="server" OnClick="btContinueShopping_Click" />
-                    <asp:Button CssClass="button1" ID="btPayment" runat="server" OnClick="btPayment_Click" />
-                    <asp:Button CssClass="button1" ID="btUpdate" runat="server" OnClick="btUpdate_Click" ValidationGroup="YourCart" />
+                    <asp:Button CssClass="btn" ID="btContinueShopping" runat="server" OnClick="btContinueShopping_Click" />
+                    <asp:Button CssClass="btn" ID="btPayment" runat="server" OnClick="btPayment_Click" />
+                    <asp:Button CssClass="btn" ID="btUpdate" runat="server" OnClick="btUpdate_Click" ValidationGroup="YourCart" />
                 </div>
                 <div class="fr" style="float: right">
-                    <asp:Button CssClass="button1" ID="btDelete" runat="server" OnClick="btDelete_Click" />
-                    <asp:Button CssClass="button1" ID="btDeleteAll" runat="server" OnClick="btDeleteAll_Click" />
+                    <asp:Button CssClass="btn" ID="btDelete" runat="server" OnClick="btDelete_Click" />
+                    <asp:Button CssClass="btn" ID="btDeleteAll" runat="server" OnClick="btDeleteAll_Click" />
                 </div>
             </td>
         </tr>
