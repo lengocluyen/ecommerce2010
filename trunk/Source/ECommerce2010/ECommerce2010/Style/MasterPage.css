@@ -7,7 +7,7 @@
 	color: black;
 	font-size: 13px;
 	line-height: 19px;
-	background: #c5e5f2 url(   '../Image/bg.JPG' ) repeat-x;
+	background: #c5e5f2 url(   '../Image/bg.png' ) repeat-x;
 	height: 100%;
 	min-width: 1000px;
 }
@@ -49,7 +49,7 @@ ul#menu li a
 	text-decoration: none;
 	color: #ffffff;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -68,13 +68,13 @@ ul#menu li a.active, ul#menu li a:hover
 {
 	background-image: url( '../Image/logo1.png' );
 	background-repeat: no-repeat;
-	width: 382px;
-	height: 86;
+	width: 388px;
+	height: 108px;
 	position: absolute;
 	height: 82px;
 	top: -2px;
 	left: 4px;
-	margin-top: -22px;
+	margin-top: -18px;
 }
 /**************************/
 
@@ -85,7 +85,7 @@ ul#menu li a.active, ul#menu li a:hover
 	display: block;
 	padding: 10px;
 	overflow: auto;
-	margin-top: 22px;
+	margin-top: 67px;
 }
 .lang
 {
