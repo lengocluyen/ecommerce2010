@@ -116,8 +116,10 @@
         </div>
     </div>
     <!-- button -->
-    <div style="float: left; width: 100%; padding-top: 15px; text-align: center">
-        <asp:Button CssClass="button1" ID="btButton" runat="server" ValidationGroup="Register" OnClick="btButton_Click" />
+    <div style="clear: both;">
+    </div>
+    <div style="padding-left:300px; margin-top:30px">
+        <asp:Button CssClass="btn" ID="btButton" runat="server" ValidationGroup="Register" OnClick="btButton_Click" />
     </div>
     <div style="width: 518px; height: 2px; clear: both;">
     </div>
